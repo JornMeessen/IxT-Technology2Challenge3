@@ -24,233 +24,234 @@ body {
   border-right: 1px solid rgba(0, 0, 0, 0.25);
 }
 
-      .map {
-        position: absolute;
-        width: 100%;
-        top: 95px;
-        bottom: 90px;
-        z-index: 1;
-      }
+.map {
+  position: absolute;
+  width: 100%;
+  top: 95px;
+  bottom: 90px;
+  z-index: 1;
+}
 
-      .weather{
-        height: 11em;
-        width: 14em;
-        background-color: white;
-        position: absolute;
-        bottom: 138px;
-        right: 20px;
-        z-index: 2;
-        border: 3px solid #262D48;
-        display: none;
-      }
+.weather{
+  height: 11em;
+  width: 14em;
+  background-color: white;
+  position: absolute;
+  bottom: 138px;
+  right: 20px;
+  z-index: 2;
+  border: 3px solid #262D48;
+  display: none;
+}
 
-      .weatherVisible{
-        display: block;
-        -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-      }
+.weatherVisible{
+  display: block;
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
 
 @-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  0% {    opacity: 0;}
+  100% {  opacity: 1;}
 }
 @keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  0% {    opacity: 0;}
+  100% {  opacity: 1;}
 }
-      h1 {
-        font-size: 1.6em;
-        margin: 0;
-        font-weight: bold;
-        line-height: 1em;
-      }
 
-      h2 {
-        font-size: 0.8em;
-        font-weight: 400;
-        line-height: 2em;
-      }
+h1 {
+  font-size: 1.6em;
+  margin: 0;
+  font-weight: bold;
+  line-height: 1em;
+}
 
-      .forecastMoment h3{
-        font-size: 1em;
-        text-align: center;
-        font-weight: bold;
-        margin: 0;
-      }
+h2 {
+  font-size: 0.8em;
+  font-weight: 400;
+  line-height: 2em;
+}
 
-      .forecastMoment h4{
-        font-size: 1em;
-        text-align: center;
-        font-weight: 400;
-        margin: 0;
-      }
+a {
+  color: #404040;
+  text-decoration: none;
+}
 
-      .forecastMoment{
-        padding: 1em 0em 0em;
-        text-align: center;
-      }
+a:hover {
+  color: #505686;
+}
 
-      a {
-        color: #404040;
-        text-decoration: none;
-      }
+.forecastMoment h3{
+  font-size: 1em;
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+}
 
-      a:hover {
-        color: #505686;
-      }
+.forecastMoment h4{
+  font-size: 1em;
+  text-align: center;
+  font-weight: 400;
+  margin: 0;
+}
 
-      .heading {
-        padding: 1.5em 1em 0em;
-        background-color: #262D48;
-        color: #fff;
-      }
+.forecastMoment{
+  padding: 1em 0em 0em;
+  text-align: center;
+}
 
-      .listings {
-        height: 79%;
-        overflow: initial;
-        padding-bottom: 60px;
-      }
+.heading {
+  padding: 1.5em 1em 0em;
+  background-color: #262D48;
+  color: #fff;
+}
 
-      .listings .item {
-        display: block;
-        border-bottom: 1px solid #eee;
-        padding: 10px;
-        text-decoration: none;
-      }
+.listings {
+  height: 79%;
+  overflow: initial;
+  padding-bottom: 60px;
+}
 
-      .listings .item:last-child {
-        border-bottom: none;
-      }
-      .listings .item .title {
-        display: block;
-        color: #171717;
-        font-weight: 700;
-      }
+.listings .item {
+  display: block;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  text-decoration: none;
+}
 
-      .listings .item .title small {
-        font-weight: 400;
-      }
-      .listings .item.active .title,
-      .listings .item .title:hover {
-        color: #505686;
-      }
-      .listings .item.active {
-        background-color: #f8f8f8;
-      }
-      ::-webkit-scrollbar {
-        width: 6px;
-        height: 3px;
-        border-left: 0;
-        background: rgba(0, 0, 0, 0.1);
-      }
-      ::-webkit-scrollbar-track {
-        background: none;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #171717;
-        border-radius: 0;
-      }
+.listings .item:last-child {
+  border-bottom: none;
+}
 
-      .marker {
-        border: none;
-        cursor: pointer;
-        height: 4em;
-        width: 2em;
-        background-image: url(../images/marker.svg);
-        background-color: rgba(0, 0, 0, 0);
-      }
+.listings .item .title {
+  display: block;
+  color: #171717;
+  font-weight: 700;
+}
 
-      .clearfix {
-        display: block;
-      }
-      .clearfix:after {
-        content: '.';
-        display: block;
-        height: 0;
-        clear: both;
-        visibility: hidden;
-      }
+.listings .item .title small {
+  font-weight: 400;
+}
 
-      /* Marker tweaks */
-      .mapboxgl-popup {
-        padding-bottom: 50px;
-      }
+.listings .item.active .title,
+.listings .item .title:hover {
+  color: #505686;
+}
 
-      .mapboxgl-popup-close-button {
-        display: none;
-      }
-      .mapboxgl-popup-content {
-        font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
-        padding: 0;
-        width: 180px;
-      }
-      .mapboxgl-popup-content-wrapper {
-        padding: 1%;
-      }
-      .mapboxgl-popup-content h3 {
-        background: #505686;
-        color: #fff;
-        margin: 0;
-        display: block;
-        padding: 10px;
-        border-radius: 3px 3px 0 0;
-        font-weight: 700;
-        margin-top: -15px;
-      }
+.listings .item.active {
+  background-color: #f8f8f8;
+}
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 3px;
+    border-left: 0;
+    background: rgba(0, 0, 0, 0.1);
+  }
 
-      .mapboxgl-popup-content h4 {
-        margin: 0;
-        display: block;
-        padding: 10px 10px 10px 10px;
-        font-weight: 400;
-      }
+  ::-webkit-scrollbar-track {
+      background: none;
+  }
 
-      .mapboxgl-popup-content div {
-        padding: 10px;
-      }
+  ::-webkit-scrollbar-thumb {
+    background: #171717;
+    border-radius: 0;
+  }
 
-      .mapboxgl-container .leaflet-marker-icon {
-        cursor: pointer;
-      }
+.marker {
+  border: none;
+  cursor: pointer;
+  height: 4em;
+  width: 2em;
+  background-image: url(../images/marker.svg);
+  background-color: rgba(0, 0, 0, 0);
+}
 
-      .mapboxgl-popup-anchor-top > .mapboxgl-popup-content {
-        margin-top: 15px;
-      }
+.clearfix {
+  display: block;
+}
 
-      .mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
-        border-bottom-color: #404040;
-      }
+.clearfix:after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
 
-      .mapboxgl-marker{
-        background-repeat: no-repeat;
-      }
+.mapboxgl-popup {
+  padding-bottom: 50px;
+}
 
-      .mapboxgl-ctrl-attrib-inner{
-        display: none;
-      }
+.mapboxgl-popup-close-button {
+  display: none;
+}
+  
+.mapboxgl-popup-content {
+  font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
+  padding: 0;
+  width: 180px;
+}
+
+.mapboxgl-popup-content-wrapper {
+  padding: 1%;
+}
+
+.mapboxgl-popup-content h3 {
+  background: #505686;
+  color: #fff;
+  margin: 0;
+  display: block;
+  padding: 10px;
+  border-radius: 3px 3px 0 0;
+  font-weight: 700;
+  margin-top: -15px;
+}
+
+.mapboxgl-popup-content h4 {
+  margin: 0;
+  display: block;
+  padding: 10px 10px 10px 10px;
+  font-weight: 400;
+}
+
+.mapboxgl-popup-content div {
+  padding: 10px;
+}
+
+.mapboxgl-container .leaflet-marker-icon {
+  cursor: pointer;
+}
+
+.mapboxgl-popup-anchor-top > .mapboxgl-popup-content {
+  margin-top: 15px;
+}
+
+.mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
+  border-bottom-color: #404040;
+} 
+
+.mapboxgl-marker{
+  background-repeat: no-repeat;
+}
+
+.mapboxgl-ctrl-attrib-inner{
+  display: none;
+}
 
 /*----------------------*/
 @media only screen and (min-width: 530px){
 
-    .map{
-      bottom: 157px;
-    }
+  .map{
+    bottom: 157px;
+  }
 
-    .weather{
-      bottom: 178px;
-    }
+  .weather{
+    bottom: 178px;
+  }
 
-    .sidebar{
-      top: 500px;
-    }
+  .sidebar{
+    top: 500px;
+  }
 
 }
 
@@ -293,7 +294,6 @@ body {
 
 }
 
-
 /*** Desktop/minimum ***/
 @media only screen and (min-width: 1024px){
 
@@ -310,7 +310,7 @@ body {
   }
 
   .weather{
-        bottom: 20px;
+    bottom: 20px;
   }
 
   h1{
@@ -318,8 +318,8 @@ body {
   }
 
   h2{
-      font-size: 1em;
-      line-height: 1em;
+    font-size: 1em;
+    line-height: 1em;
   }
 
   .heading {
@@ -328,12 +328,4 @@ body {
 
 }
 
-
-/*----------------------*/
-
-/*** Desktop HD/XL ***/
-@media only screen and (min-width: 1440px) {
-
-
-}
 /*----------------------*/
